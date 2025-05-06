@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: oauth2
+  datasource:
+    url: jdbc:mysql://localhost:3306/oauth2?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    jackson:
+      deserialization:
+        fail-on-unknown-properties: true
