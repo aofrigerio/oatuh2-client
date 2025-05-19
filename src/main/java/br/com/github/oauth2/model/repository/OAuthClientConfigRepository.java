@@ -1,5 +1,6 @@
-package br.com.github.oauth2.model;
+package br.com.github.oauth2.model.repository;
 
+import br.com.github.oauth2.model.entity.OAuthClientConfig;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package br.com.github.oauth2.model;
+package br.com.github.oauth2.model.repository;
 
 import br.com.github.oauth2.service.ClientRegistrationService;
 import org.springframework.security.oauth2.client.registration.ClientRegistration;
