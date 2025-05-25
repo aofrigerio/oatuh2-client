@@ -22,6 +22,7 @@ public class CustomSuccessHandler implements AuthenticationSuccessHandler {
         OAuth2AuthenticationToken oAuth2AuthenticationToken = (OAuth2AuthenticationToken) authentication;
         String jwtToken = ((DefaultOidcUser) oAuth2AuthenticationToken.getPrincipal()).getIdToken().getTokenValue();
 
+        //Após a sessão, ele invalida para poder matar a sessão do Java
         HttpSession session = request.getSession(false);
         if(session != null) session.invalidate();
 
